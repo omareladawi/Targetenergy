@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>Target Energy</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Energy | Profilo Aziendale</title>
+  <meta name="description" content="Target Energy - Profilo Aziendale, missione, valori, clienti e contatti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Target Energy home">
+        <img src="img/logo.png" alt="Target Energy logo">
+        <span class="brand-text"><span class="brand-light">target</span><span class="brand-strong">energy</span></span>
+      </a>
 
-<header class="header">
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false" aria-controls="menu">☰</button>
 
- <div class="navbar">
-  <a href="#"><div class="nav-logo">
-    <img src="img/logo.png">
-    <h2>
-      <span class="light">target</span><span class="bold">energy</span>
-    </h2>
-  </div></a>
+      <nav class="nav" id="menu" aria-label="Main navigation">
+        <a href="#profilo">Profilo Aziendale</a>
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#missione">Missione</a>
+        <a href="#valori">I Nostri Valori</a>
+        <a href="#clienti">I Nostri Clienti</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
+  <main>
+    <section class="hero" id="profilo">
+      <div class="hero-bg-shape hero-bg-shape-1"></div>
+      <div class="hero-bg-shape hero-bg-shape-2"></div>
+      <div class="hero-circle hero-circle-1"></div>
+      <div class="hero-circle hero-circle-2"></div>
 
- 
- 
-  <div class="nav-menu" id="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">Chi siamo</a>
-    <a href="cosa facciamo.html">Cosa facciamo</a>
-    <a href="values.html">Valori</a>
-    <a href="clients.html">Clienti</a>
-    <a href="contact.html">Contatti</a>
-  </div>
+      <div class="container hero-content">
+        <p class="eyebrow">Profilo Aziendale</p>
+        <h1>Energia, Innovazione e Affidabilità per il futuro.</h1>
+        <p class="lead">Target Energy sviluppa soluzioni professionali per impiantistica, lavorazione metalli ed energia sostenibile, con un approccio moderno e orientato ai risultati.</p>
+        <a class="cta" href="#contatti">Contattaci</a>
+      </div>
+      <div class="wave" aria-hidden="true"></div>
+    </section>
 
- </div>
+    <section class="section" id="chi-siamo">
+      <div class="container grid two-col">
+        <div class="media card-glass">
+          <img src="img/tour.png" alt="Team Target Energy">
+        </div>
+        <div class="content">
+          <h2>Chi Siamo</h2>
+          <p>Target Energy S.r.l.s è una realtà dinamica e in costante crescita, attiva nei settori della lavorazione dei metalli e dell’impiantistica.</p>
+          <p>Fondata con l’obiettivo di offrire servizi altamente qualificati, l’azienda si distingue per innovazione, qualità e rapidità operativa.</p>
+        </div>
+      </div>
+    </section>
 
-</header>
+    <section class="section section-blue" id="missione">
+      <div class="container grid two-col reverse">
+        <div class="content">
+          <h2>Missione</h2>
+          <p>La nostra missione è fornire soluzioni affidabili e innovative nei settori delle energie rinnovabili e dell’efficienza energetica.</p>
+          <p>Puntiamo alla soddisfazione del cliente con processi ottimizzati, competenze specialistiche e un forte orientamento alla sostenibilità.</p>
+        </div>
+        <div class="media card-glass">
+          <img src="img/man.jpeg" alt="Missione Target Energy">
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-  <h1>Efficienza Energetica</h1>
-  <p>Il futuro è già oggi</p>
-</section>
+    <section class="section" id="valori">
+      <div class="container">
+        <h2 class="section-title">I Nostri Valori</h2>
+        <div class="values-grid">
+          <article class="value-card"><h3>Qualità</h3><p>Garantiamo standard elevati in ogni progetto.</p></article>
+          <article class="value-card"><h3>Affidabilità</h3><p>Rispettiamo tempi, obiettivi e impegni concordati.</p></article>
+          <article class="value-card"><h3>Innovazione</h3><p>Adottiamo tecnologie moderne e processi evoluti.</p></article>
+          <article class="value-card"><h3>Sostenibilità</h3><p>Favoriamo energia pulita e approcci responsabili.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-blue" id="clienti">
+      <div class="container">
+        <h2 class="section-title">I Nostri Clienti</h2>
+        <div class="clients-wrap">
+          <span class="client-pill">EG Edilizia</span>
+          <span class="client-pill">Raggi</span>
+          <span class="client-pill">Bertuzzi Energy</span>
+          <span class="client-pill">Zenith Costruzioni</span>
+          <span class="client-pill">SolarTech Italia</span>
+        </div>
+      </div>
+    </section>
 
- <script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("active");
-}
-</script>
+    <section class="section contact" id="contatti">
+      <div class="container grid two-col">
+        <div class="content">
+          <h2>Contatti</h2>
+          <p><strong>Telefono:</strong> +39 389 214 2930</p>
+          <p><strong>Telefono:</strong> +39 331 491 3341</p>
+          <p><strong>Indirizzo:</strong> Via Forlivese 58/A – 50060 Pelago (FI)</p>
+          <p><strong>Email:</strong> targetenrgyy@gmail.com</p>
+        </div>
+        <div class="media logo-card">
+          <img src="img/logo2.png" alt="Target Energy brand">
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
