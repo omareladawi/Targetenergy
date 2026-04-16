@@ -1,0 +1,201 @@
+/* RESET */
+body{
+margin:0;
+font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+.header{
+position:fixed;
+width:100%;
+top:0;
+background:#eee;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+/* NAVBAR */
+.navbar{
+max-width:1100px;
+margin:0 auto;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* LOGO */
+.nav-logo{
+font-size:25px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.nav-logo img{
+width:50px;
+}
+
+.nav-logo h2{
+font-weight:normal;
+}
+
+/* TEXT COLORS */
+.light{
+background: linear-gradient(90deg, #8fb9d9, #5a9ccc);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight:300;
+}
+
+.bold{
+background: linear-gradient(90deg, #5a9ccc, #3d93d1);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight:600;
+}
+
+/* MENU DESKTOP */
+.nav-menu{
+display:flex;
+gap:25px;
+}
+
+.nav-menu a{
+text-decoration:none;
+font-weight:500;
+padding:10px 18px;
+color:black;
+background:#eee;
+border-radius:10px;
+transition:0.3s;
+}
+
+/* HOVER DESKTOP */
+.nav-menu a:hover{
+background:#a9c46c;
+color:white;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background: linear-gradient(90deg, #8fb9d9, #6fa3c8);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* SECTIONS */
+.section{
+padding:120px 0;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
+/* FLEX */
+.flex{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.text{
+width:50%;
+}
+
+.image{
+width:50%;
+display:flex;
+justify-content:center;
+}
+
+.image img{
+width:500px;
+height:400px;
+object-fit:cover;
+}
+
+/* BLUE SECTION */
+.blue{
+background: linear-gradient(90deg, #8fb9d9, #6fa3c8);
+color:white;
+}
+
+/* MENU BUTTON */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+z-index:2000;
+}
+
+.nav-menu{
+position:fixed;
+top: 130px;
+left:0;
+width:100%;
+
+
+background:#3b4652;
+
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+
+padding:90px 30px 30px;
+gap:25px;
+
+transform: translateY(-120%);
+opacity:0;
+transition: all 0.2s ease;
+
+z-index:1500;
+
+
+}
+
+.nav-menu.active{
+transform: translateY(0);
+opacity:1;
+}
+
+/* 🔥 أهم جزء */
+.nav-menu a{
+background:none !important;
+color:white;
+font-size:18px;
+padding:10px 0;
+width:100%;
+border-radius:0;
+}
+
+.nav-menu a:hover{
+color:#a9c46c;
+background:none;
+}
+
+/* SECTIONS MOBILE */
+.flex{
+flex-direction:column;
+}
+
+.text, .image{
+width:100%;
+}
+
+}

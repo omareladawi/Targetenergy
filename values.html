@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Valori &#8211; Targetenergy</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+ <div class="navbar">
+  <a href="index.html"><div class="nav-logo">
+    <img src="img/logo.png">
+    <h2>
+      <span class="light">target</span><span class="bold">energy</span>
+    </h2>
+  </div></a>
+
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="nav-menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">Chi siamo</a>
+    <a href="cosa facciamo.html">Cosa facciamo</a>
+    <a href="values.html">Valori</a>
+    <a href="clients.html">Clienti</a>
+    <a href="contact.html">Contatti</a>
+  </div>
+ 
+  </div>
+</header>
+
+<section class="section flex">
+
+  <div class="image">
+    <img src="img/tour.png">
+  </div>
+
+  <div class="text">
+
+    <h1>I Nostri Valori</h1>
+
+    <p><b>Qualità:</b> garantiamo standard elevati.</p>
+    <p><b>Affidabilità:</b> rispettiamo gli impegni.</p>
+    <p><b>Innovazione:</b> tecnologie moderne.</p>
+    <p><b>Sostenibilità:</b> energia pulita.</p>
+    <p><b>Professionalità:</b> team qualificato.</p>
+
+  </div>
+
+</section>
+
+ <script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
