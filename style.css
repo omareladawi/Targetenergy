@@ -36,6 +36,7 @@ h3,
 img {
   max-width: 100%;
   display: block;
+  border-radius: 0 !important;
 }
 
 .container {
@@ -330,11 +331,10 @@ img {
 }
 
 .card-glass,
-.logo-card,
-.form-card {
-  border-radius: var(--radius);
+.logo-card {
+  border-radius: 0;
   box-shadow: var(--shadow);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .card-glass {
@@ -495,6 +495,8 @@ img {
 .form-card {
   background: var(--white);
   border: 1px solid rgba(27, 137, 201, 0.18);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   padding: 24px;
 }
 
@@ -539,6 +541,26 @@ img {
 
 .form-status.error {
   color: #b61b4e;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(21, 49, 69, 0.12);
+  background: var(--white);
+  padding: 26px 0;
+}
+
+.site-footer-content {
+  display: grid;
+  gap: 6px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @keyframes float {
