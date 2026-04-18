@@ -37,6 +37,9 @@ const formStatus = document.getElementById('formStatus');
 
 if (contactForm && formStatus) {
   const submitButton = contactForm.querySelector('button[type="submit"]');
+  const placeholderAction = (contactForm.dataset.placeholderAction || '').trim();
+  const mailtoLink = document.querySelector('a[href^="mailto:"]');
+  const contactEmail = mailtoLink ? (mailtoLink.getAttribute('href') || '').replace(/^mailto:/i, '') : '';
 
   contactForm.addEventListener('submit', async (event) => {
     if (!contactForm.checkValidity()) {
@@ -49,7 +52,7 @@ if (contactForm && formStatus) {
 
     event.preventDefault();
     const action = (contactForm.getAttribute('action') || '').trim();
-    if (!action || action.includes('FORMSPREE_FORM_ID')) {
+    if (!action || (placeholderAction && action === placeholderAction)) {
       formStatus.textContent = 'Configura l’endpoint del form prima di inviare la richiesta.';
       formStatus.className = 'form-status error';
       return;
@@ -85,7 +88,9 @@ if (contactForm && formStatus) {
       formStatus.className = 'form-status success';
       contactForm.reset();
     } catch (error) {
-      formStatus.textContent = 'Invio non riuscito. Riprova tra poco o scrivi a info@targetenergyit.com.';
+      formStatus.textContent = contactEmail
+        ? `Invio non riuscito. Riprova tra poco o scrivi a ${contactEmail}.`
+        : 'Invio non riuscito. Riprova tra poco.';
       formStatus.className = 'form-status error';
     } finally {
       if (submitButton) {

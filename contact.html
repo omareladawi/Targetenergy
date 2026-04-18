@@ -88,7 +88,13 @@
         <div class="form-card">
           <h2>Richiedi informazioni</h2>
           <!-- Replace FORMSPREE_FORM_ID with your real Formspree form ID -->
-          <form id="contactForm" action="https://formspree.io/f/FORMSPREE_FORM_ID" method="POST" novalidate>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/FORMSPREE_FORM_ID"
+            data-placeholder-action="https://formspree.io/f/FORMSPREE_FORM_ID"
+            method="POST"
+            novalidate
+          >
             <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label for="name">Nome e cognome</label>
             <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
