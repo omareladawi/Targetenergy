@@ -37,7 +37,6 @@ const formStatus = document.getElementById('formStatus');
 
 if (contactForm && formStatus) {
   const submitButton = contactForm.querySelector('button[type="submit"]');
-  const placeholderAction = (contactForm.dataset.placeholderAction || '').trim();
   const mailtoLink = document.querySelector('a[href^="mailto:"]');
   const contactEmail = mailtoLink ? (mailtoLink.getAttribute('href') || '').replace(/^mailto:/i, '') : '';
 
@@ -52,8 +51,8 @@ if (contactForm && formStatus) {
 
     event.preventDefault();
     const action = (contactForm.getAttribute('action') || '').trim();
-    if (!action || (placeholderAction && action === placeholderAction)) {
-      formStatus.textContent = 'Configura l’endpoint del form prima di inviare la richiesta.';
+    if (!action) {
+      formStatus.textContent = 'Invio non disponibile. Riprova tra poco.';
       formStatus.className = 'form-status error';
       return;
     }
