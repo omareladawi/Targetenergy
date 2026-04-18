@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>Contatti &#8211; Targetenergy</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Target Energy</title>
+  <meta name="description" content="Contatta Target Energy per impiantistica, lavorazione metalli, manutenzione e soluzioni di efficienza energetica.">
+  <link rel="canonical" href="https://targetenergyit.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Contatti | Target Energy">
+  <meta property="og:description" content="Richiedi informazioni o un confronto tecnico: sede, recapiti e modulo contatto Target Energy.">
+  <meta property="og:url" content="https://targetenergyit.com/contact.html">
+  <meta property="og:image" content="https://targetenergyit.com/img/logo2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contatti | Target Energy">
+  <meta name="twitter:description" content="Recapiti aziendali e modulo contatto con validazione lato client.">
+  <meta name="twitter:image" content="https://targetenergyit.com/img/logo2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Target Energy S.r.l.s",
+    "url": "https://targetenergyit.com/contact.html",
+    "logo": "https://targetenergyit.com/img/logo.png",
+    "telephone": "+39 389 214 2930",
+    "email": "info@targetenergyit.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Forlivese 58/A",
+      "addressLocality": "Pelago",
+      "addressRegion": "FI",
+      "postalCode": "50060",
+      "addressCountry": "IT"
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
-
 <body>
-
-<header class="header">
-
-<div class="navbar">
-  <a href="index.html"><div class="nav-logo">
-    <img src="img/logo.png">
-    <h2>
-      <span class="light">target</span><span class="bold">energy</span>
-    </h2>
-  </div></a>
-  
-
-<div class="menu-toggle" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <div class="nav-menu"  id="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">Chi siamo</a>
-    <a href="cosa facciamo.html">Cosa facciamo</a>
-    <a href="values.html">Valori</a>
-    <a href="clients.html">Clienti</a>
-    <a href="contact.html">Contatti</a>
-  </div>
- 
+  <header class="header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Target Energy home">
+        <img src="img/logo.png" alt="Logo Target Energy">
+        <span class="brand-text"><span class="brand-light">target</span><span class="brand-strong">energy</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav class="nav" id="menu" aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="about.html">Chi siamo</a>
+        <a href="cosa-facciamo.html">Cosa facciamo</a>
+        <a href="values.html">Valori</a>
+        <a href="clients.html">Clienti</a>
+        <a href="contact.html" aria-current="page">Contatti</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="section" >
-  <h1>CONTATTI</h1>
-</section>
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <p class="eyebrow">Contatti</p>
+        <h1>Parliamo del tuo prossimo progetto tecnico.</h1>
+        <p class="lead">Il nostro team è disponibile per analisi preliminari, richieste operative e informazioni sui servizi. Compila il modulo o usa i recapiti diretti.</p>
+      </div>
+    </section>
 
-<section class="section blue flex">
+    <section class="section">
+      <div class="container grid two-col">
+        <div class="content">
+          <h2>Recapiti aziendali</h2>
+          <ul class="info-list info-list-dark">
+            <li><strong>Telefono:</strong> +39 389 214 2930</li>
+            <li><strong>Telefono:</strong> +39 331 491 3341</li>
+            <li><strong>Email:</strong> <a href="mailto:info@targetenergyit.com">info@targetenergyit.com</a></li>
+            <li><strong>Sede:</strong> Via Forlivese 58/A – 50060 Pelago (FI)</li>
+            <li><strong>Orari:</strong> Lun–Ven 08:30–18:00</li>
+          </ul>
+          <p><a class="text-link" href="https://maps.google.com/?q=Via+Forlivese+58%2FA+50060+Pelago+FI" target="_blank" rel="noopener noreferrer">Apri la sede su Google Maps</a></p>
+        </div>
+        <div class="form-card">
+          <h2>Richiedi informazioni</h2>
+          <form id="contactForm" novalidate>
+            <label for="name">Nome e cognome</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
 
-  <div class="text">
-    <p>📞 +39 389 214 2930</p>
-    <p>📞 +39 331 491 3341</p>
-    <p>📍 Via Forlivese 58/A – 50060 Pelago (FI)</p>
-    <p>✉ targetenrgyy@gmail.com</p>
-  </div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
 
-  <div class="logo-img">
-    <img src="img/logo.png">
-  </div>
+            <label for="phone">Telefono</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="^\+?[0-9\s]{8,}$">
 
-</section>
+            <label for="company">Azienda (opzionale)</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
 
- <script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("active");
-}
-</script>
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="5" required minlength="20"></textarea>
 
+            <button type="submit" class="cta cta-dark">Invia richiesta</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
