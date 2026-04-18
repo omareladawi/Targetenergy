@@ -16,6 +16,10 @@
   <meta name="twitter:title" content="Contatti | Target Energy">
   <meta name="twitter:description" content="Recapiti aziendali e modulo contatto con validazione lato client.">
   <meta name="twitter:image" content="https://targetenergyit.com/img/logo2.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -83,7 +87,9 @@
         </div>
         <div class="form-card">
           <h2>Richiedi informazioni</h2>
-          <form id="contactForm" novalidate>
+          <!-- Replace FORMSPREE_FORM_ID with your real Formspree form ID -->
+          <form id="contactForm" action="https://formspree.io/f/FORMSPREE_FORM_ID" method="POST" novalidate>
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label for="name">Nome e cognome</label>
             <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
 
@@ -106,15 +112,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="site-footer" aria-label="Contatti">
-    <div class="container site-footer-content">
-      <p>+39 389 214 2930</p>
-      <p>+39 331 491 3341</p>
-      <p>Via Forlivese 58/A – 50060 Pelago (FI)</p>
-      <p><a href="mailto:info@targetenergyit.com">info@targetenergyit.com</a></p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
