@@ -26,7 +26,11 @@ const currentPath = decodeURIComponent(window.location.pathname.split('/').pop()
 if (menu) {
   menu.querySelectorAll('a').forEach((link) => {
     const linkPath = decodeURIComponent(link.getAttribute('href') || '');
-    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+    if (
+      linkPath === currentPath
+      || (currentPath === 'index.html' && linkPath === '/')
+      || (currentPath === '' && (linkPath === 'index.html' || linkPath === '/'))
+    ) {
       link.setAttribute('aria-current', 'page');
     }
   });
